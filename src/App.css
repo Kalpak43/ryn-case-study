@@ -1,0 +1,52 @@
+h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+.h2-bold {
+  font-weight: 700;
+}
+
+.h2-semibold {
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+h4 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
+h5 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+  text-align: right;
+}

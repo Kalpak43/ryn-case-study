@@ -1,0 +1,34 @@
+import Button from "./ui/button";
+
+function BlogCard({
+  image,
+  date,
+  title,
+  tags,
+}: {
+  image: string;
+  date: string;
+  title: string;
+  tags: string[];
+  link: string;
+}) {
+  return (
+    <div className="flex items-center justify-between gap-8">
+      <img src={image} alt={title} className="w-71 h-54 rounded-3xl" />
+      <div className="space-y-4 flex-1">
+        <p className="text-lg">{date}</p>
+        <h2 className="h2-semibold">{title}</h2>
+        <div className="space-x-2">
+          {tags.map((tag) => (
+            <Button key={tag} variant="tag">
+              {tag}
+            </Button>
+          ))}
+        </div>
+      </div>
+      <Button variant="default">Read</Button>
+    </div>
+  );
+}
+
+export default BlogCard;

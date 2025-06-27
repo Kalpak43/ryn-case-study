@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-accent: #FF804A;
+  --color-dark: #010208;
+  --color-gray: #CBCBCB;
+}
+
+@utility font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+@utility font-syne {
+  font-family: "Syne", sans-serif;
+  font-style: normal;
+}
+
+body {
+  @apply font-poppins bg-dark text-gray;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
