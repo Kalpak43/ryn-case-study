@@ -51,8 +51,14 @@ Welcome to the **Ryn Case Study** project! This is a modern web application buil
    ```
 
 5. **Preview the production build**
+
    ```bash
    npm run preview
+   ```
+
+6. **Run tests**
+   ```bash
+   npm run test
    ```
 
 ---
