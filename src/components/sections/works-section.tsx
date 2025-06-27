@@ -1,5 +1,5 @@
 import Section from "../ui/section";
-import Card from "../word-card";
+import Card from "../work-card";
 
 const works = [
   {
@@ -8,7 +8,7 @@ const works = [
     description:
       "With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.",
     tags: ["Figma", "UX"],
-    buttonText: "View Case Study",
+    link: "/",
   },
   {
     image: "/assets/fortknox-app.png",
@@ -16,7 +16,7 @@ const works = [
     description:
       "With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.",
     tags: ["Mobile", "Web"],
-    buttonText: "View Case Study",
+    link: "/",
   },
   {
     image: "/assets/zenocide-app.png",
@@ -24,7 +24,7 @@ const works = [
     description:
       "With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.",
     tags: ["App", "Web"],
-    buttonText: "View Case Study",
+    link: "/",
   },
 ];
 
@@ -54,8 +54,7 @@ function Works() {
             title={work.title}
             description={work.description}
             tags={work.tags}
-            buttonText={work.buttonText}
-            onClick={() => console.log("Card clicked!")}
+            link={work.link}
           />
         ))}
       </div>

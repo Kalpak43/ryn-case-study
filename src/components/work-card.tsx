@@ -1,19 +1,17 @@
 import Button from "./ui/button";
 
-function Card({
+function WorkCard({
   image,
   title,
   description,
   tags,
-  buttonText,
-  onClick,
+  link,
 }: {
   image?: string;
   title?: string;
   description?: string;
   tags?: string[];
-  buttonText?: string;
-  onClick?: () => void;
+  link: string;
 }) {
   return (
     <div className="bg-gray/48 rounded-[2.5rem] p-8 grid grid-cols-1 md:grid-cols-2 gap-8 relative overflow-hidden">
@@ -40,12 +38,12 @@ function Card({
           </div>
         </div>
 
-        <Button variant="default" onClick={onClick}>
-          {buttonText || "Learn More"}
+        <Button variant="default" asChild>
+          <a href={link}>View Case Study</a>
         </Button>
       </div>
     </div>
   );
 }
 
-export default Card;
+export default WorkCard;

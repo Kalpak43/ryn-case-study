@@ -5,6 +5,7 @@ function BlogCard({
   date,
   title,
   tags,
+  link,
 }: {
   image: string;
   date: string;
@@ -14,7 +15,11 @@ function BlogCard({
 }) {
   return (
     <div className="flex max-md:flex-col md:items-center justify-between gap-4 md:gap-8">
-      <img src={image} alt={title} className="w-full md:w-71 md:h-54 rounded-3xl" />
+      <img
+        src={image}
+        alt={title}
+        className="w-full md:w-71 md:h-54 rounded-3xl"
+      />
       <div className="space-y-4 flex-1">
         <p className="text-lg">{date}</p>
         <h2 className="h2-semibold">{title}</h2>
@@ -26,7 +31,9 @@ function BlogCard({
           ))}
         </div>
       </div>
-      <Button variant="default">Read</Button>
+      <Button variant="default" asChild>
+        <a href={link}>Read More</a>
+      </Button>
     </div>
   );
 }
