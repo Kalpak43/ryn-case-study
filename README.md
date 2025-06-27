@@ -5,6 +5,7 @@ Welcome to the **Ryn Case Study** project! This is a modern web application buil
 ---
 
 ## 🚀 Features
+
 - **Modern UI**: Sleek, responsive design with reusable components
 - **TypeScript**: Type-safe codebase for reliability
 - **Vite**: Lightning-fast development and build tool
@@ -13,12 +14,14 @@ Welcome to the **Ryn Case Study** project! This is a modern web application buil
 ---
 
 ## 📦 Main Dependencies
+
 - **React**: UI library for building interactive interfaces
 - **TypeScript**: Strongly typed JavaScript
 - **Vite**: Next-generation frontend tooling
 - **ESLint**: Linting for code quality
 - **Tailwind**: Utility-first CSS framework for rapid UI development
 - **Shadcn UI**: Accessible and customizable UI components
+- **Vitest**: Testing framework for unit and integration tests
 
 ---
 
@@ -34,12 +37,15 @@ Welcome to the **Ryn Case Study** project! This is a modern web application buil
    npm install
    ```
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
+
    The app will be available at [http://localhost:5173](http://localhost:5173)
 
 4. **Build for production**
+
    ```bash
    npm run build
    ```
@@ -52,10 +58,12 @@ Welcome to the **Ryn Case Study** project! This is a modern web application buil
 ---
 
 ## 📁 Project Structure
+
 ```
 ryn-case-study/
 ├── public/           # Static assets
 ├── src/              # Source code
+|   ├── __test__/     # test files
 │   ├── components/   # Reusable UI components
 │   ├── hooks/        # Custom React hooks
 │   ├── lib/          # Utility functions
@@ -68,6 +76,7 @@ ryn-case-study/
 ---
 
 ## 📜 License
+
 This project is licensed under the MIT License.
 
 ---
