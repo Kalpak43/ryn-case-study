@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import Section from "../ui/section";
 
 const faqData = [
   {
@@ -25,7 +26,7 @@ const faqData = [
 
 function FAQ() {
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <h2 className="h2-bold">
         <img
           src="/assets/star.svg"
@@ -45,7 +46,7 @@ function FAQ() {
           ))}
         </Accordion>
       </div>
-    </section>
+    </Section>
   );
 }
 

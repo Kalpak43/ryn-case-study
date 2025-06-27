@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import TestimonialCard from "../testimonial-card";
 import Slider, { SliderItem, type SliderRefType } from "../ui/slider";
+import Section from "../ui/section";
 
 const testimonials = [
   {
@@ -31,7 +32,7 @@ function Testimonials() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <h2 className="h2-bold">
         <img
           src="/assets/star.svg"
@@ -86,7 +87,7 @@ function Testimonials() {
           </button>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

@@ -50,3 +50,57 @@ h5 {
   letter-spacing: 0%;
   text-align: right;
 }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    /* line-height: 2rem; */
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}

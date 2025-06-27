@@ -1,3 +1,5 @@
+import Section from "../ui/section";
+
 const experience = [
   {
     title: "Lead Product Designer",
@@ -23,7 +25,7 @@ const experience = [
 
 function Experience() {
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <h2 className="h2-bold">
         <img
           src="/assets/star.svg"
@@ -42,13 +44,13 @@ function Experience() {
               <h3>{exp.title}</h3>
               <div className="text-right">
                 <h5>{exp.company}</h5>
-                <p className="text-white">{exp.duration}</p>
+                <p className="text-white max-md:text-xs">{exp.duration}</p>
               </div>
             </li>
           ))}
         </ul>
       </div>
-    </section>
+    </Section>
   );
 }
 

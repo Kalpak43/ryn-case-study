@@ -1,3 +1,4 @@
+import Section from "../ui/section";
 import Card from "../word-card";
 
 const works = [
@@ -29,7 +30,7 @@ const works = [
 
 function Works() {
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <div className="flex items-center justify-between">
         <h2 className="h2-bold">
           <img
@@ -58,7 +59,7 @@ function Works() {
           />
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

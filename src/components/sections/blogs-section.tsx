@@ -1,4 +1,5 @@
 import BlogCard from "../blog-card";
+import Section from "../ui/section";
 
 const blogs = [
   {
@@ -26,7 +27,7 @@ const blogs = [
 
 function Blogs() {
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <div className="flex items-center justify-between">
         <h2 className="h2-bold">
           <img
@@ -47,7 +48,7 @@ function Blogs() {
           <BlogCard key={index} {...blog} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
 

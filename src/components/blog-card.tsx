@@ -13,8 +13,8 @@ function BlogCard({
   link: string;
 }) {
   return (
-    <div className="flex items-center justify-between gap-8">
-      <img src={image} alt={title} className="w-71 h-54 rounded-3xl" />
+    <div className="flex max-md:flex-col md:items-center justify-between gap-4 md:gap-8">
+      <img src={image} alt={title} className="w-full md:w-71 md:h-54 rounded-3xl" />
       <div className="space-y-4 flex-1">
         <p className="text-lg">{date}</p>
         <h2 className="h2-semibold">{title}</h2>

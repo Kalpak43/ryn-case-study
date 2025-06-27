@@ -1,6 +1,8 @@
+import Section from "../ui/section";
+
 function Expertise() {
   return (
-    <section className="px-25 py-16 space-y-8">
+    <Section>
       <h2 className="h2-bold">
         <img
           src="/assets/star.svg"
@@ -67,7 +69,7 @@ function Expertise() {
           </p>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
 

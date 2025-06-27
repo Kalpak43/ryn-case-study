@@ -66,7 +66,7 @@ function Footer() {
           className="w-14 h-14 inline align-middle mb-1"
         />
       </Marquee>
-      <div className="max-w-[1440px] mx-auto px-25 pt-28 pb-8 space-y-8">
+      <div className="max-w-[1440px] mx-auto px-12 lg:px-25 pt-28 pb-8 space-y-8">
         <div className="space-y-8">
           <div className="text-center space-y-8">
             <h1>LET’S TALK!</h1>
@@ -76,9 +76,9 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between font-syne text-sm">
-          <p>&copy; Rehan Raihan - 2023</p>
-          <div className="flex items-center gap-8">
+        <div className="flex max-md:flex-col items-center justify-between font-syne text-sm text-white">
+          <p className="max-md:order-2">&copy; Rehan Raihan - 2023</p>
+          <div className="flex items-center gap-8 max-md:order-1">
             <a href="/" className="font-syne text-sm">
               Dribble
             </a>
